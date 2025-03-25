@@ -1,7 +1,8 @@
 const http = require("http");
 var StringDecoder = require("string_decoder").StringDecoder;
 
-let defaultColor= "pink";
+let defaultColor= "blue";
+
 
 const getBody = (req, callback) => {
   const decode = new StringDecoder("utf-8");
@@ -27,6 +28,7 @@ const getBody = (req, callback) => {
 
 // here, you could declare one or more variables to store what comes back from the form.
 let jokeHere = "<h1>Enter a joke below</h1>";
+let jokeBelow= "<h2>Are you a comedian?</h2>"
 
 // here, you can change the form below to modify the input fields and what is displayed.
 // This is just ordinary html with string interpolation.
@@ -34,9 +36,11 @@ const form = () => {
   return `
   <body>
   <p>${jokeHere}</p>
+  <br>
+  <p>${jokeBelow}</p>
   <form method="POST">
   <input style="background-color:${defaultColor}" name="joke"> </input>
-  <button type="submit">Are you a comedian?!</button>
+  <button type="submit">Click here to see!</button>
   </form>
   </body>
   `;
