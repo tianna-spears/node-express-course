@@ -10,7 +10,7 @@
   "author": "Tianna Spears",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
+  "devDependencies": {  
     "nodemon": "^3.1.9"
   }
 }
