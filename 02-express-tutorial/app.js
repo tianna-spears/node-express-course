@@ -12,11 +12,7 @@ app.get('/api/v1/test', (req, res) => {
 })
 
 app.get('/api/v1/products', (req, res) => {
-   const newProducts = products.map((product) => {
-    const {id, name, image, price, desc} = product;
-        return {id, name, image, price, desc}
-   })
-    res.json(newProducts);
+    res.json(products);
 })
 app.get('/api/v1/products/:productID', (req, res) => {
     const { productID } = req.params;
@@ -48,7 +44,7 @@ if (search) {
 if (limit) {
     sortedProducts= sortedProducts.slice(0, Number (limit))
 } 
-if (sortedProducts.length > 5 ) {
+if (sortedProducts.length < 1 ) {
     return res.status(200).send('No products match your search!')
 }
     res.status(200).json(sortedProducts)
