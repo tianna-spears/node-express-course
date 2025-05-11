@@ -1,0 +1,105 @@
+:root {
+    --fixed-width: 400px;
+    --borderRadius: 0.5rem;
+    --shadow-2: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --smallText: 0.875rem;
+    --letterSpacing: 1px;
+  }
+  
+  /* General Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 2rem;
+  }
+  
+  main {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  /* Home Page */
+  .home-page {
+    text-align: center;
+    padding: 2rem;
+    color: palevioletred;
+    font-size: 1.2rem;
+    background: #fff;
+    border-radius: var(--borderRadius);
+    margin-bottom: 2rem;
+  }
+  
+  /* Forms */
+  .form {
+    background: white;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--shadow-2);
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .form-row {
+    margin-bottom: 1.25rem;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: var(--smallText);
+    margin-bottom: 0.25rem;
+    text-transform: capitalize;
+    letter-spacing: var(--letterSpacing);
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: var(--borderRadius);
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+  
+  /* Buttons */
+  .btn {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: var(--borderRadius);
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .btn-block {
+    width: 100%;
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  /* Alerts */
+  .form-alert {
+    color: red;
+    font-size: var(--smallText);
+    margin-top: 0.5rem;
+    display: none;
+  }
+  
+  /* Dashboard */
+  .container {
+    background: white;
+    border-radius: var(--borderRadius);
+    padding: 2rem;
+    box-shadow: var(--shadow-2);
+  }
+  
+  .token {
+    color: purple;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  
+  .result {
+    margin-top: 1rem;
+  }
+  
