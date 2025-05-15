@@ -1,3 +1,4 @@
+// week 3 HW
 const express = require('express');
 const app = express();
 
@@ -57,43 +58,34 @@ if (sortedProducts.length < 1 ) {
 
 app.all('*', (req, res) => {
     res.status(404).send('404 Error: Resource not found!')
-})
 
-app.listen(3000, () => {
-    console.log('Server is listening on Port 3000!')
-})
+ 
+// setup server 
+// Week 4 HW
+  
+// const express = require('express')
+// const app= express()
 
+// const peopleRouter= require('./routes/people')
 
+// // req to middleware to res
+// const logger= require('./logger.js')
+// // const authorize= require('./authorize.js')
+// app.use([logger]);
+// // static assets
+// app.use(express.static('./methods-public'))
+// // parse form data
+// app.use(express.urlencoded({ extended: false }))
+// // parse json
+// app.use(express.json())
 
+// app.use('/api/v1/people', peopleRouter);
 
-
-
-
-// const express = require('express');
-// const app = express();
-
-// app.get('/', (req, res) => {
-//     console.log('User GET/ hit the resource')
-//     res.status(200).send('Home Page')
-// })
-
-// app.get('/about', (req, res) => {
-//     console.log('User GET/hit the About Page')
-//     res.status(200).send('About Page')
-// })
-
-// app.all('*', (req,res) => {
-//     res.status(404).send('<h1> Resource not found! </h1>')
-// })
-
-// app.listen(5000, () => {
-//     console.log('Server is listening on Port 5000')
-// })
-
-// app.get
-// app.post
-// app.put
-// app.delete
-// app.all
-// app.use
-// app.listen
+// app.post('/login', (req, res) => {
+//     const {name} = req.body;
+//     if(name) {
+//         return res
+//         .status(200)
+//         .send(`Welcome ${name}`)
+//     }
+//     res.status(401).send('Please provide credentials')
